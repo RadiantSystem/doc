@@ -166,6 +166,7 @@ $(document).ready(function() {
     function CreateNavigation () {
 
         var BaseURL = window.location.href;
+        BaseURL = BaseURL+'doc/';
         BaseURL = BaseURL.replace(/\/doc\/.*/, '/doc/');
 
         var Navigation = '<ul id="marginalia">';
