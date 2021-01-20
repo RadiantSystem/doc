@@ -49,7 +49,7 @@ $(document).ready(function() {
                 }
             ]
         },
-        {
+        /*{
             Name: 'OTRS Business Solution™ Manual',
             Type: 'manual',
             Path: 'otrs-business-solution',
@@ -79,7 +79,7 @@ $(document).ready(function() {
                     PDFFileName: 'otrs_business_solution_book.pdf'
                 }
             ]
-        },
+        },*/
         {
             Name: 'OTRS::ITSM Manual',
             Type: 'manual',
@@ -247,10 +247,6 @@ $(document).ready(function() {
     }
 
     BasicHTML = '\
-<div id="Header">\
-    <h1 class="CompanyName">Portal</h1>\
-    <div id="Logo"></div>\
-</div>\
 <div id="Navigation">\
 <!--\
     <ul>\
@@ -270,15 +266,24 @@ $(document).ready(function() {
         <div id="doc" class="intro">\
             <div class="github-teaser github-teaser--important">\
                 <p>\
-                    <i class="fa fa-lightbulb-o"></i> <strong>Did you know?</strong> The OTRS Group recently announced important open source strategy changes. Learn more about these changes on the new <a href="https://community.otrs.com/" target="_blank">OTRS community website</a>.\
+                    <i class="fa fa-lightbulb-o"></i>\
                 </p>\
             </div>\
         </div>\
-        <div id="footer">\
-            <p class="copyright">\
-                &copy; 2001-2017 <a href="https://www.otrs.com/company/imprint/">OTRS Group</a>\
-            </p>\
-        </div>\
+<!-- Yandex.Metrika counter -->\
+<script type="text/javascript" >\
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};\
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})\
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");\
+    ym(71085925, "init", {\
+        clickmap:true,\
+        trackLinks:true,\
+        accurateTrackBounce:true,\
+        webvisor:true\
+   });\
+</script>\
+<noscript><div><img src="https://mc.yandex.ru/watch/71085925" style="position:absolute; left:-9999px;" alt="" /></div></noscript>\
+<!-- /Yandex.Metrika counter -->\
     </div>\
 </div>';
 
@@ -350,14 +355,4 @@ $(document).ready(function() {
             $(this).addClass('Active').parents('ul').removeClass('Hidden');
         }
     });
-
-    // Start Google Analytics Tracking
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-28118796-2', 'auto');
-    ga('send', 'pageview');
-    // End Google Analytics Tracking
-
 });
